@@ -49,7 +49,7 @@
     }
   }
   @media screen and (max-width: 600px) {
-    .navbar.responsive {position: absolute;
+    .navbar.responsive {position: relative;
     z-index: 1;
     }
     .navbar.responsive a.icon {
