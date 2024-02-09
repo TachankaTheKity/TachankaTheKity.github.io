@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <head>
-  <script src="main.js"></script>
+  
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
+
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     body {
       background-color: var(--bg);
@@ -13,15 +15,24 @@
     }
   </style>
   <body>
-    <div id="Navbar" class="navbar">
-      <a href="main.html">main</a>
-      <a href="">blog</a>
-      <a class="active" href="art.html">art & stuff</a>
-      <a href="mee.html">about me</a>
-      <a href="javascript:void(0);" class="icon" onclick="nav()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    <header class="navigation-header">
+      <nav>
+        <div class="logo-container">
+          <a> </a>
+        </div>
+        <div class="navigation-items" id="navigation-items">
+          <a href="main.html">main</a>
+          <a>blog</a>
+          <a href="art.html">art and projects</a>
+          <a href="mee.html">about me</a>
+        </div>
+        <div class="hamburger">
+          <span id="openHam">&#9776</span>
+          <span id="closeHam">&#x2716</span>
+        </div>
+      </nav>
+    </header>
     <div></div>
+    <script src="main.js"></script>
   </body>
 </head>
