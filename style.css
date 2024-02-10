@@ -1,12 +1,17 @@
 :root {
   --bg: #fff;
   --text: #000;
+  --navbg: #bd3dbd;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #171717;
     --text: #fff;
+    --navbg: #602f6b;
   }
+}
+.content {
+  padding-left: 5px;
 }
 *,
 body {
@@ -15,7 +20,7 @@ body {
   box-sizing: border-box;
 }
 .navigation-header {
-  background-color: rgb(73, 51, 153);
+  background-color: var(--navbg);
   padding: 0 15px;
   height: 60px;
   display: flex;
@@ -34,22 +39,22 @@ nav {
   gap: 40px;
 }
 .navigation-items > a {
-  color: ghostwhite;
+  color: var(--text);
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   transition: 0.4s ease-in-out;
 }
 .navigation-items > a:hover {
-  color: white;
+  color: var(--text);
 }
 .hamburger {
   display: none;
   font-size: 20px;
   font-weight: 800;
-  color: white;
+  color: var(--text);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hamburger {
     display: flex;
     cursor: pointer;
@@ -64,10 +69,14 @@ nav {
     position: absolute;
     right: 0;
     top: 58px;
-    background-color: rgb(73, 51, 153);
+    background-color: var(--navbg);
     width: 100%;
     height: calc(100vh - 58px);
     padding-top: 60px;
     gap: 10vh;
+  }
+  .sonaimg {
+    max-width: 250px;
+    min-width: 250px;
   }
 }
